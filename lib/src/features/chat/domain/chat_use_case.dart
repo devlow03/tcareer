@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:ably_flutter/ably_flutter.dart' as ably;
 import 'package:app_tcareer/src/features/chat/data/models/all_conversation.dart';
 import 'package:app_tcareer/src/features/chat/data/models/conversation.dart';
@@ -13,8 +14,9 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ChatUseCase {
-  final ChatRepository chatRepository;
+  final IChatRepository chatRepository;
   final Ref ref;
+
   ChatUseCase(this.chatRepository, this.ref);
 
   Future<void> initialize() async => await chatRepository.initialize();
@@ -91,6 +93,7 @@ class ChatUseCase {
 
   Future<AllConversation> getAllConversation() async =>
       await chatRepository.getAllConversation();
+
   Stream<DatabaseEvent> listenUserStatus(String userId) =>
       chatRepository.listenUserStatus(userId);
 
@@ -113,6 +116,7 @@ class ChatUseCase {
 
   Future<UserFromMessage> getUsersFromMessage(String query) async =>
       await chatRepository.getUsersFromMessage(query);
+
   Future getRecentChatters(String query) async =>
       await chatRepository.getRecentChatters(query);
 }
