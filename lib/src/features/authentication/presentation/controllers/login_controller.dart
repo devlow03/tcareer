@@ -1,7 +1,7 @@
 import 'package:app_tcareer/firebase_options.dart';
 import 'package:app_tcareer/src/extensions/auth_extension.dart';
 import 'package:app_tcareer/src/features/authentication/data/models/login_request.dart';
-import 'package:app_tcareer/src/features/authentication/usecases/login_use_case.dart';
+import 'package:app_tcareer/src/features/authentication/domain/login_use_case.dart';
 import 'package:app_tcareer/src/configs/app_constants.dart';
 import 'package:app_tcareer/src/features/jobs/data/repository/job_repository.dart';
 import 'package:app_tcareer/src/utils/app_utils.dart';

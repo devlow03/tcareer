@@ -14,7 +14,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class UserUseCase {
   final UserRepository userRepository;
-  final AuthRepository authRepository;
+  final IAuthRepository authRepository;
   UserUseCase(this.userRepository, this.authRepository);
 
   Future<Users> getUserInfo() async => await userRepository.getUserInfo();
@@ -71,5 +71,5 @@ class UserUseCase {
       await userRepository.getJobTopic();
 }
 
-final userUseCaseProvider = Provider((ref) =>
-    UserUseCase(ref.read(userRepositoryProvider), ref.read(authRepository)));
+final userUseCaseProvider = Provider((ref) => UserUseCase(
+    ref.read(userRepositoryProvider), ref.read(authRepositoryProvider)));

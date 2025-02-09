@@ -7,7 +7,7 @@ import 'package:app_tcareer/src/features/index/index_controller.dart';
 import 'package:app_tcareer/src/features/jobs/data/repository/job_repository.dart';
 import 'package:app_tcareer/src/features/notifications/presentation/controllers/notification_controller.dart';
 import 'package:app_tcareer/src/features/posts/presentation/posts_provider.dart';
-import 'package:app_tcareer/src/features/user/usercases/connection_use_case.dart';
+import 'package:app_tcareer/src/features/user/domain/connection_use_case.dart';
 import 'package:app_tcareer/src/routes/index_route.dart';
 import 'package:app_tcareer/src/utils/user_utils.dart';
 import 'package:flutter/material.dart';

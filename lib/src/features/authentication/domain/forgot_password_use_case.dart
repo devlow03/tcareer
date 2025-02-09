@@ -5,7 +5,7 @@ import 'package:app_tcareer/src/features/authentication/data/repositories/auth_r
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ForgotPasswordUseCase {
-  final AuthRepository authRepository;
+  final IAuthRepository authRepository;
   ForgotPasswordUseCase(this.authRepository);
 
   Future<void> forgotPassword(ForgotPasswordRequest body) async {
@@ -24,4 +24,4 @@ class ForgotPasswordUseCase {
 }
 
 final forgotPasswordUseCase =
-    Provider((ref) => ForgotPasswordUseCase(ref.watch(authRepository)));
+    Provider((ref) => ForgotPasswordUseCase(ref.watch(authRepositoryProvider)));

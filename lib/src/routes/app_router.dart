@@ -28,7 +28,7 @@ import 'package:app_tcareer/src/features/posts/presentation/pages/search_page.da
 import 'package:app_tcareer/src/features/splash/intro_page.dart';
 import 'package:app_tcareer/src/features/splash/splash_page.dart';
 import 'package:app_tcareer/src/features/user/presentation/pages/another_profile_page.dart';
-import 'package:app_tcareer/src/features/user/usercases/connection_use_case.dart';
+import 'package:app_tcareer/src/features/user/domain/connection_use_case.dart';
 import 'package:app_tcareer/src/routes/index_route.dart';
 import 'package:app_tcareer/src/routes/transition_builder.dart';
 import 'package:app_tcareer/src/services/apis/api_service_provider.dart';

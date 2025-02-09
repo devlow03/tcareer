@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:app_tcareer/src/features/authentication/usecases/login_use_case.dart';
+import 'package:app_tcareer/src/features/authentication/domain/login_use_case.dart';
 import 'package:app_tcareer/src/features/index/index_controller.dart';
 import 'package:app_tcareer/src/features/jobs/data/models/add_job_topic_request.dart';
 import 'package:app_tcareer/src/features/jobs/data/models/get_job_response.dart';
@@ -13,8 +13,8 @@ import 'package:app_tcareer/src/features/posts/usecases/post_use_case.dart';
 import 'package:app_tcareer/src/features/user/data/models/resume_model.dart';
 import 'package:app_tcareer/src/features/user/data/models/update_profile_request.dart';
 import 'package:app_tcareer/src/features/user/data/models/users.dart';
-import 'package:app_tcareer/src/features/user/usercases/connection_use_case.dart';
-import 'package:app_tcareer/src/features/user/usercases/user_use_case.dart';
+import 'package:app_tcareer/src/features/user/domain/connection_use_case.dart';
+import 'package:app_tcareer/src/features/user/domain/user_use_case.dart';
 import 'package:app_tcareer/src/utils/app_utils.dart';
 import 'package:app_tcareer/src/utils/snackbar_utils.dart';
 import 'package:app_tcareer/src/utils/user_utils.dart';

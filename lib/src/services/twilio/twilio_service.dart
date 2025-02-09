@@ -25,4 +25,4 @@ class TwilioService {
   }
 }
 
-final twilioService = Provider((ref) => TwilioService());
+final twilioServiceProvider = Provider((ref) => TwilioService());
